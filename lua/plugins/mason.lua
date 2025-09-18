@@ -5,6 +5,8 @@ return {
         config = function()
             require("mason").setup()
             vim.keymap.set("n", "<leader>m", "<cmd>Mason<CR>", { desc = "Show Mason menu" })
+            -- Use LSP formatting instead of native `==`
+            vim.keymap.set('n', '<leader>=', vim.lsp.buf.format, { noremap = true, silent = true })
         end
     },
     {
