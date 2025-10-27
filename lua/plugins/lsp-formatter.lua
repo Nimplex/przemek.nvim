@@ -23,7 +23,7 @@ return {
         "stevearc/conform.nvim",
         opts = {
             formatters_by_ft = {
-                php = { "ecs" },
+                php = { "easy-coding-standard" },
                 rust = { "rustfmt" },
                 javascript = { "prettier" },
                 typescript = { "prettier" },

@@ -12,5 +12,13 @@ vim.o.shiftwidth = 4
 vim.opt.list = true
 vim.opt.listchars = { space = "·", tab = "→-" }
 
+vim.cmd([[
+    augroup TransparentBackground
+    autocmd!
+    autocmd ColorScheme * highlight Normal ctermbg=none guibg=none
+    autocmd ColorScheme * highlight NonText ctermbg=none guibg=none
+    augroup END
+]])
+
 require("config.lazy")
 
