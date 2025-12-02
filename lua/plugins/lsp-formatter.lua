@@ -32,6 +32,7 @@ return {
                 html = { "prettier" },
                 css = { "prettier" },
                 scss = { "prettier" },
+                json = { "prettier" },
             },
         },
         config = function(_, opts)
